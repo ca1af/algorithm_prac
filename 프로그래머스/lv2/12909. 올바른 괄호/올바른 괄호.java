@@ -7,13 +7,6 @@ import java.util.*;
 
 class Solution {
     boolean solution(String s) {
-        boolean answer = true;
-
-        // 아이디어
-
-        // 1. 일단 ( 랑 ) 개수가 맞아야함
-        // 2. 처음부터 탐색한다면 (가 나온 개수랑 )가 나온 개수가 맞아야하고, 맞으면 일단 제외시켜야 한다. 제외시켰을 때 예외가 있다면 false인거지.
-
         Stack<Character> stack = new Stack<>();
 
         for (char c : s.toCharArray()) {

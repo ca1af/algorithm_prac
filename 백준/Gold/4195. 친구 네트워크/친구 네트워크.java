@@ -63,16 +63,8 @@ public class Main {
         int parentX = findParent(x);
         int parentY = findParent(y);
         
-        if (rank[parentX] > rank[parentY]) {
-            parent[parentY] = parentX;
-            size[parentX] += size[parentY];
-        } else if (rank[parentX] < rank[parentY]) {
-            parent[parentX] = parentY;
-            size[parentY] += size[parentX];
-        } else {
-            parent[parentY] = parentX;
-            size[parentX] += size[parentY];
-            rank[parentX]++;
-        }
+        parent[parentY] = parentX;
+        size[parentX] += size[parentY];
+        
     }
 }
